@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>Sprint Design</title>
+
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/components/bouton.css">
 	<link rel="stylesheet" type="text/css" href="css/components/avatar.css">
@@ -12,10 +13,10 @@
 	<link rel="stylesheet" type="text/css" href="css/components/tabs.css">
 </head>
 <body>
-	<div class="navbar">
+	<div class="navbar" id="mynavbar">
 		<nav>
 			<ul class="navbar_logo">
-				<li> <img src="img/crown.png" class="logo"></li>
+				<li> <img src="img/crown.png" class="logo" alt="crown logo"></li>
 			</ul>
 
 			<ul  class="navbar-right">
@@ -25,45 +26,48 @@
 					<a href="">About</a> </li>
 				<li class="nav-item">
 					<a href="">Contact us</a> </li>
-				<li><img src="img/Myprofile.jpg" class="avatar-small"></li>
+				<li><img src="img/Myprofile.jpg" class="avatar-small" alt="avatar"></li>
 			</ul>
 		</nav>
 	</div>
 	
-	<div class="banner">
+	<div class="banner" id="mybanner">
 		<h1 class="title">Welcome to our page</h1>
+		<button class="btn-blue"><a href="#mytabs">VIEW TABS</a></button>
 	</div>
-
-	<button class="btn-blue">MAXI Button</button>
 	
 	<hr>
-	<h2 class="title">Avatar</h2>
+	<h2 class="title" id="myavatar">Avatar</h2>
 	<div class="avatar-list">
-		<img src="img/Myprofile.jpg" class="avatar-large">
+		<img src="img/Myprofile.jpg" class="avatar-large" alt="avatar">
 
-		<img src="img/Myprofile.jpg" class="avatar">
+		<img src="img/Myprofile.jpg" class="avatar" alt="avatar">
 
-		<img src="img/Myprofile.jpg" class="avatar-small">
+		<img src="img/Myprofile.jpg" class="avatar-small" alt="avatar">
 	</div>
 	<hr>
 
-	<h2 class="title" id="tips">Tips</h2>
+	<h2 class="title" id="mytabs">TABS</h2>
 	<div class="tabs">
-		<button class="tab">Onglet1
+		<button class="tab"><a href="#mynavbar">VIEW NAVBAR</a>
 		</button>
-		<button class="tab">Onglet2
+		<button class="tab"><a href="#myavatar">VIEW AVATAR</a>
 		</button>
-		<button class="tab">Onglet3
+		<button class="tab"><a href="#mybanner">VIEW BANNER</a>
 		</button>
 	</div>
+
 	<hr>
 	<h2 class="title">Card</h2>
 	<div class="card">
-		<span id="card">
-			<img src="img/Myprofile.jpg" class="card-avatar">
-		</span>
-		<h3>My card</h3>
+		<img src="img/Myprofile.jpg" class="card-avatar" alt="avatar">
+
+		<div class="card-category">
+			<h3>My card</h3>
+		</div>
 	</div>
+
+</div>
 
 	<footer>
 		<p>thank you for visiting our page</p>
