@@ -7,3 +7,7 @@ body{
 .title{
 	text-align: center;
 }
+
+a:link{
+    text-decoration: none;
+}
