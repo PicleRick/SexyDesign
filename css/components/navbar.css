@@ -29,7 +29,7 @@ nav{
 a{
 	color:#ECF0F1; 
 }
-li a:hover{
+li :hover{
     background-color: #0DD1D1;
     color:#1C2833;
 }
